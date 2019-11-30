@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="resource/styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">Welcome to DC Universe</h1>
+                <p id="description" class="description text-center">
+                    We'll help you find the best universe as per your ability!
+                </p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Universe</label>
+                    <input
+                        name="universe"
+                        id="universe"
+                        class="form-control"
+                        placeholder="Universe Name"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number"
+                        >Age<span class="clue">(optional)</span></label
+                    >
+                    <input
+                        type="number"
+                        name="age"
+                        id="number"
+                        min="10"
+                        max="99"
+                        class="form-control"
+                        placeholder="Age"
+                    />
+                </div>
+                <div class="form-group">
+                    <p>What are your super powers?</p>
+                    <select
+                        id="dropdown"
+                        name="role"
+                        class="form-control"
+                        required
+                    >
+                        <option disabled selected value
+                            >Select Superpower</option
+                        >
+                        <option value="speed">Speed</option>
+                        <option value="super-human-strength"
+                            >Super Human Strength</option
+                        >
+                        <option value="part-human-part-robot"
+                            >Part human Part Robot</option
+                        >
+                        <option value="rich">Rich</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Do you know where is justice league headquarter ?</p>
+                    <label>
+                        <input
+                            name="user-recommend"
+                            value="YES"
+                            type="radio"
+                            class="input-radio"
+                            checked
+                        />YES</label
+                    >
+                    <label>
+                        <input
+                            name="user-recommend"
+                            value="No"
+                            type="radio"
+                            class="input-radio"
+                        />NO</label
+                    >
+                    <label
+                        ><input
+                            name="user-recommend"
+                            value="not-sure"
+                            type="radio"
+                            class="input-radio"
+                        />Not sure</label
+                    >
+                </div>
+
+                <div class="form-group">
+                    <p>
+                        Who is your favourite Villain?
+                    </p>
+                    <select
+                        id="villain"
+                        name="villain"
+                        class="form-control"
+                        required
+                    >
+                        <option disabled selected value
+                            >Select an option</option
+                        >
+                        <option value="Darkside">Darkside</option>
+                        <option value="Joker">Joker</option>
+                        <option value="Lex-Luthor">Lex Luthor</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Any thing else you'd like us to know about you?</p>
+                    <textarea
+                        id="about"
+                        class="input-textarea"
+                        name="about"
+                        placeholder="Write there"
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
